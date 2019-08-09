@@ -16,7 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".standardGuitar.StandardGuitar"></activity>
+        <activity android:name=".tuningVariants.StandardGuitar"></activity>
+        <activity android:name=".tuningVariants.OpenD"></activity>
+        <activity android:name=".tuningVariants.DropC"></activity>
+
     </application>
 
 </manifest>
