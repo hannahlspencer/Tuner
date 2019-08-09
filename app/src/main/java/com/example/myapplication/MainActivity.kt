@@ -3,6 +3,7 @@ package com.example.myapplication
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.myapplication.tuningVariants.DropC
 import com.example.myapplication.tuningVariants.StandardGuitar
 import com.example.myapplication.tuningVariants.OpenD
 
@@ -23,6 +24,10 @@ class MainActivity : AppCompatActivity() {
 
         opend.setOnClickListener{
             startActivity(Intent(this, OpenD::class.java))
+        }
+
+        dropc.setOnClickListener{
+            startActivity(Intent(this, DropC::class.java))
         }
     }
 }

@@ -4,32 +4,33 @@ import android.media.MediaPlayer
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.myapplication.R
-import kotlinx.android.synthetic.main.open_d.*
+import kotlinx.android.synthetic.main.drop_c.*
 
-class OpenD: AppCompatActivity() {
+class DropC:AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.open_d)
+        setContentView(R.layout.drop_c)
         setMediaPlayers()
     }
 
     fun setMediaPlayers() {
-        opend_lowd.setOnClickListener {
+        dropc_lowc.setOnClickListener {
+            //TODO find a low C note
             playNote(R.raw.lowd)
         }
-        opend_a.setOnClickListener {
-            playNote(R.raw.lowa)
+        dropc_g.setOnClickListener {
+            playNote(R.raw.lowg)
         }
-        opend_d.setOnClickListener {
-            playNote(R.raw.d)
+        dropc_c.setOnClickListener {
+            playNote(R.raw.c)
         }
-        opend_fsharp.setOnClickListener {
-            playNote(R.raw.fsharp)
+        dropc_f.setOnClickListener {
+            playNote(R.raw.f)
         }
-        opend_higha.setOnClickListener {
-            playNote(R.raw.higha)
+        dropc_a.setOnClickListener {
+            playNote(R.raw.a)
         }
-        opend_highd.setOnClickListener {
+        dropc_d.setOnClickListener {
             playNote(R.raw.highd)
         }
     }

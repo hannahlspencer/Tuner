@@ -19,7 +19,7 @@ class StandardGuitar: AppCompatActivity() {
             playNote(R.raw.lowe)
         }
         a.setOnClickListener {
-            playNote(R.raw.a)
+            playNote(R.raw.lowa)
         }
         d.setOnClickListener {
             playNote(R.raw.d)
