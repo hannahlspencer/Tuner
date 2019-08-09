@@ -15,22 +15,29 @@ class StandardGuitar: AppCompatActivity() {
         setMediaPlayers()
     }
     fun setMediaPlayers() {
-        val mpe = MediaPlayer.create(this, R.raw.lowe)
         lowe.setOnClickListener {
-            mpe.start()
+            playNote(R.raw.lowe)
         }
-        val mpa = MediaPlayer.create(this, R.raw.a)
         a.setOnClickListener {
-            mpa.start()
+            playNote(R.raw.a)
         }
-//        val mpd = MediaPlayer.create(context, R.raw.lowe)
-//        lowe.setOnClickListener {
-//            mpd.start()
-//        }
-//        val mpg = MediaPlayer.create(context, R.raw.lowe)
-//        lowe.setOnClickListener {
-//            mpg.start()
-//        }
+        d.setOnClickListener {
+            playNote(R.raw.d)
+        }
+        g.setOnClickListener {
+            playNote(R.raw.g)
+        }
+        b.setOnClickListener {
+            playNote(R.raw.b)
+        }
+        e.setOnClickListener {
+            playNote(R.raw.e)
+        }
+    }
+
+    fun playNote(rawNote: Int) {
+        val mp = MediaPlayer.create(this, rawNote)
+        mp.start()
     }
 }
 
